@@ -387,25 +387,23 @@
               </li>
             </ul>
         </div>
-        <form autocomplete="on">
-          <label for="sub-email" class="form-lable-footer">
-            <h3 class="footer-headline">Підпишіться на розсилку</h3>
-          </label>
-          <div class="form-footer">
-           <input class="sub-email" type="email" name="sub-email" id="sub-email" placeholder="E-mail">
-            <button class="footer-buttom" type="submit">Підписатися
-             <svg class="footer-buttom-icon" width="24" height="24">
+        <div class="footer-form-contener">
+        <h3 class="footer-headline">Підпишіться на розсилку</h3>
+        <form autocomplete="on" class="form-footer">
+          <label for="sub-email" class="form-lable-footer"></label>
+          <input class="sub-email" type="email" name="sub-email" id="sub-email" placeholder="E-mail">
+          <button class="footer-buttom" type="submit">Підписатися
+            <svg class="footer-buttom-icon" width="24" height="24">
                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
+             </svg>
+          </button>
+         </form>
+        </div>
       </div>
     </footer>
 
     <div class="backdrop is-hidden"   data-modal>
       <div class="modal">
-        <div class="modal-contener">
           <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
            <button type="button" class="close-button" data-modal-close>
               <svg width="11" height="11" >
@@ -444,9 +442,8 @@
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
               </div>
-              <label name="form-textarea" for="user-comment" class="form-lable">
-              Коментар
-              </label>
+              <label name="form-textarea" for="user-comment" class="form-lable form-lable-textarea">
+              Коментар</label>
               <textarea class="form-textarea" name="user-comment" id="user-comment" placeholder="Введіть текст"></textarea>
               <div class="form-checkbox">
                 <input class="checkbox" type="checkbox" id="user-checkbox"  name="user-checkbox" required >
@@ -454,11 +451,10 @@
                 width="16"  height="15" >
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
-                <label name="user-checkbox" for="user-checkbox" class="form-lable form-lable-checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-link">Умови договору</a> </label>
+                <label name="user-checkbox" for="user-checkbox" class="form-lable-checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-link">Умови договору</a> </label>
               </div>
             <button type="submit" class="button-check">Відправити</button>
           </form>
-        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
