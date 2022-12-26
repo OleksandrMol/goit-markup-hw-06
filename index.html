@@ -345,58 +345,120 @@
     <footer class="context-section">
        <div class="contener footer-contener">
         <div class="footer-address-contener">
-      <a href="./index.html" class="logo logo-web logo-footer"><span >Web</span><span class="logo-end">Studio</span> </a>
-      <address>
-        <ul class="address-list">
-          <li class="address-item"><a class="contact-adress" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
-          <li class="address-item"><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="address-item"><a class=" contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
-      </div>
-      <div class="footer-sosial-contener">
-      <h3 class="footer-headline">приєднуйтесь</h3>
-       <ul class="footer-sosial-list">
-          <li class="footer-sosial-item">
-               <a href="#" class="footer-sosial-links">
+          <a href="./index.html" class="logo logo-web logo-footer"><span >Web</span><span class="logo-end">Studio</span> </a>
+          <address>
+            <ul class="address-list">
+              <li class="address-item"><a class="contact-adress" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
+              <li class="address-item"><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li class="address-item"><a class=" contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-sosial-contener">
+          <h3 class="footer-headline">приєднуйтесь</h3>
+          <ul class="footer-sosial-list">
+              <li class="footer-sosial-item">
+                <a href="#" class="footer-sosial-links">
                   <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
+                     <use href="./images/icons.svg#icon-instagram"></use>
+                   </svg>
+                 </a>
+              </li>
+              <li class="footer-sosial-item">
+                <a href="#" class="footer-sosial-links">
+                 <svg width="20" height="20">
+                   <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+               </a>
+              </li>
+              <li class="footer-sosial-item">
+                <a href="#" class="footer-sosial-links">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
                 </a>
-            </li>
-            <li class="footer-sosial-item">
-                  <a href="#" class="footer-sosial-links">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
               </li>
               <li class="footer-sosial-item">
-                  <a href="#" class="footer-sosial-links">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
+                <a href="#" class="footer-sosial-links">
+                  <svg width="20" height="20">
+                   <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                 </a>
               </li>
-              <li class="footer-sosial-item">
-                  <a href="#" class="footer-sosial-links">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-              </li>
-       </ul>
-      </div>
+            </ul>
+        </div>
+        <form autocomplete="on">
+          <label for="sub-email" class="form-lable-footer">
+            <h3 class="footer-headline">Підпишіться на розсилку</h3>
+          </label>
+          <div class="form-footer">
+           <input class="sub-email" type="email" name="sub-email" id="sub-email" placeholder="E-mail">
+            <button class="footer-buttom" type="submit">Підписатися
+             <svg class="footer-buttom-icon" width="24" height="24">
+               <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
 
     <div class="backdrop is-hidden"   data-modal>
-      <div class="modal" >
-      <button type="button" class="close-button" data-modal-close>
-        <svg width="11" height="11" >
-          <use href="./images/icons.svg#icon-Vector"></use>
-        </svg>
-      </button>
+      <div class="modal">
+        <div class="modal-contener">
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+           <button type="button" class="close-button" data-modal-close>
+              <svg width="11" height="11" >
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+          </button>
+          <form name="signup_form" autocomplete="on">
+                <label for="user-name" class="form-lable">
+                Ім'я
+                </label>
+              <div class="form-contener">
+              <input class="form-input" type="text" name="user-name" id="user-name"
+              required>
+              <svg class="form-icon"
+                width="18"  height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+              </div>
+                <label for="user-tel" class="form-lable">
+                Телефон
+                </label>
+              <div class="form-contener">
+              <input class="form-input" type="tel" name="user-tel" id="user-tel" required>
+              <svg class="form-icon"
+                width="18"  height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              </div>
+                <label for="user-mail" class="form-lable">
+                Пошта
+                </label>
+              <div class="form-contener">
+              <input class="form-input" type="email" name="user-mail" id="user-mail" required>
+              <svg class="form-icon"
+                width="18"  height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              </div>
+              <label name="form-textarea" for="user-comment" class="form-lable">
+              Коментар
+              </label>
+              <textarea class="form-textarea" name="user-comment" id="user-comment" placeholder="Введіть текст"></textarea>
+              <div class="form-checkbox">
+                <input class="checkbox" type="checkbox" id="user-checkbox"  name="user-checkbox" required >
+                <svg class="checkbox-icon"
+                width="16"  height="15" >
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+                <label name="user-checkbox" for="user-checkbox" class="form-lable form-lable-checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-link">Умови договору</a> </label>
+              </div>
+            <button type="submit" class="button-check">Відправити</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
